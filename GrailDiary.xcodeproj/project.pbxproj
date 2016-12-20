@@ -14,6 +14,7 @@
 		2C97C5B31E087C8D00F1D40C /* Island.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C97C5B21E087C8D00F1D40C /* Island.json */; };
 		2C97C5B51E087D1700F1D40C /* IslandTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C97C5B41E087D1700F1D40C /* IslandTableViewController.swift */; };
 		2C97C5B71E087D3500F1D40C /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C97C5B61E087D3500F1D40C /* Island.swift */; };
+		2C97C5B91E08DCBA00F1D40C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C97C5B81E08DCBA00F1D40C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2C97C5B21E087C8D00F1D40C /* Island.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Island.json; sourceTree = "<group>"; };
 		2C97C5B41E087D1700F1D40C /* IslandTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IslandTableViewController.swift; path = ../IslandTableViewController.swift; sourceTree = "<group>"; };
 		2C97C5B61E087D3500F1D40C /* Island.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		2C97C5B81E08DCBA00F1D40C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				2C97C5A01E087C6200F1D40C /* AppDelegate.swift */,
 				2C97C5B61E087D3500F1D40C /* Island.swift */,
 				2C97C5B41E087D1700F1D40C /* IslandTableViewController.swift */,
+				2C97C5B81E08DCBA00F1D40C /* DetailViewController.swift */,
 				2C97C5B21E087C8D00F1D40C /* Island.json */,
 				2C97C5A41E087C6200F1D40C /* Main.storyboard */,
 				2C97C5A71E087C6200F1D40C /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				2C97C5B51E087D1700F1D40C /* IslandTableViewController.swift in Sources */,
 				2C97C5A11E087C6200F1D40C /* AppDelegate.swift in Sources */,
 				2C97C5B71E087D3500F1D40C /* Island.swift in Sources */,
+				2C97C5B91E08DCBA00F1D40C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

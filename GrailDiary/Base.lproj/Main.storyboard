@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,6 +35,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="dZ3-A5-bfd" kind="show" identifier="DetailViewSegue" id="ZUd-T4-cYk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -46,6 +50,107 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lxY-1H-Hj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1024.8" y="67.916041979010501"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="vhm-aG-s0c">
+            <objects>
+                <viewController id="dZ3-A5-bfd" customClass="DetailViewController" customModule="GrailDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sXL-RM-itn"/>
+                        <viewControllerLayoutGuide type="bottom" id="mgZ-rf-cpv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uCu-WW-PSb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Island" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krY-u7-X8W">
+                                <rect key="frame" x="108.5" y="72" width="159" height="30"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language Spoken:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeX-vq-pS0">
+                                <rect key="frame" x="66" y="182.5" width="128.5" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WI8-OA-siP">
+                                <rect key="frame" x="163" y="213" width="49.5" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whx-LT-O9r">
+                                <rect key="frame" x="66" y="243.5" width="73" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting Home Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbI-yc-sn0">
+                                <rect key="frame" x="66" y="304.5" width="152.5" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgp-Tj-16Q">
+                                <rect key="frame" x="160.5" y="335" width="54" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="54" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPq-y1-r6C">
+                                <rect key="frame" x="178.5" y="152" width="18" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbl-QF-j1r">
+                                <rect key="frame" x="66" y="121.5" width="81.5" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US Dollars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzO-NY-Fdp">
+                                <rect key="frame" x="148" y="274" width="79.5" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WI8-OA-siP" firstAttribute="centerX" secondItem="uCu-WW-PSb" secondAttribute="centerX" id="4Ee-J8-jIh"/>
+                            <constraint firstItem="PzO-NY-Fdp" firstAttribute="centerX" secondItem="uCu-WW-PSb" secondAttribute="centerX" id="Ep0-FV-tag"/>
+                            <constraint firstItem="Sbl-QF-j1r" firstAttribute="top" secondItem="krY-u7-X8W" secondAttribute="bottom" constant="20" id="MoE-Bw-XyF"/>
+                            <constraint firstItem="whx-LT-O9r" firstAttribute="leading" secondItem="uCu-WW-PSb" secondAttribute="leadingMargin" constant="50" id="NWe-5b-oa0"/>
+                            <constraint firstItem="krY-u7-X8W" firstAttribute="top" secondItem="sXL-RM-itn" secondAttribute="bottom" constant="8" id="RtS-cG-aZD"/>
+                            <constraint firstItem="HeX-vq-pS0" firstAttribute="leading" secondItem="uCu-WW-PSb" secondAttribute="leadingMargin" constant="50" id="Z3x-Us-wbF"/>
+                            <constraint firstItem="dbI-yc-sn0" firstAttribute="leading" secondItem="uCu-WW-PSb" secondAttribute="leadingMargin" constant="50" id="beL-gb-bSi"/>
+                            <constraint firstItem="HeX-vq-pS0" firstAttribute="top" secondItem="Sbl-QF-j1r" secondAttribute="bottom" constant="40" id="cFp-hM-ZNh"/>
+                            <constraint firstItem="whx-LT-O9r" firstAttribute="top" secondItem="HeX-vq-pS0" secondAttribute="bottom" constant="40" id="dVy-eV-BiU"/>
+                            <constraint firstItem="Rgp-Tj-16Q" firstAttribute="top" secondItem="PzO-NY-Fdp" secondAttribute="bottom" constant="40" id="en9-nx-zN9"/>
+                            <constraint firstItem="dbI-yc-sn0" firstAttribute="top" secondItem="whx-LT-O9r" secondAttribute="bottom" constant="40" id="fpS-wJ-PGp"/>
+                            <constraint firstItem="WI8-OA-siP" firstAttribute="top" secondItem="DPq-y1-r6C" secondAttribute="bottom" constant="40" id="gCe-sN-Kzw"/>
+                            <constraint firstItem="Sbl-QF-j1r" firstAttribute="leading" secondItem="uCu-WW-PSb" secondAttribute="leadingMargin" constant="50" id="nUV-Dn-bKv"/>
+                            <constraint firstItem="PzO-NY-Fdp" firstAttribute="top" secondItem="WI8-OA-siP" secondAttribute="bottom" constant="40" id="oNw-u8-M8y"/>
+                            <constraint firstItem="krY-u7-X8W" firstAttribute="centerX" secondItem="uCu-WW-PSb" secondAttribute="centerX" id="ojy-b9-ez5"/>
+                            <constraint firstItem="Rgp-Tj-16Q" firstAttribute="centerX" secondItem="uCu-WW-PSb" secondAttribute="centerX" id="rvc-Dc-qPN"/>
+                            <constraint firstItem="DPq-y1-r6C" firstAttribute="top" secondItem="krY-u7-X8W" secondAttribute="bottom" constant="50" id="tJo-ly-ESC"/>
+                            <constraint firstItem="DPq-y1-r6C" firstAttribute="centerX" secondItem="uCu-WW-PSb" secondAttribute="centerX" id="xki-TU-Zvr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currencyLabel" destination="PzO-NY-Fdp" id="g77-pd-LJg"/>
+                        <outlet property="homePriceLabel" destination="Rgp-Tj-16Q" id="I7b-Q5-3AH"/>
+                        <outlet property="islandNameLabel" destination="krY-u7-X8W" id="pMQ-Gl-Bna"/>
+                        <outlet property="languageLabel" destination="WI8-OA-siP" id="zbF-at-tFl"/>
+                        <outlet property="populationLabel" destination="DPq-y1-r6C" id="gK1-v0-ZxB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5U-3N-koc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1720.8" y="67.916041979010501"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CWP-Sc-djB">
