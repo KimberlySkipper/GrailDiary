@@ -1,0 +1,75 @@
+[
+  {
+    "islandName": "Dominican Republic",
+    "population": 10400000,
+    "language": "Spanish",
+    "currency": "Dominican Peso",
+    "startingHomePrice": 155000
+  },
+
+  {
+    "islandName": "Grand Cayman",
+    "population": 60413,
+    "language": "English",
+    "currency": "Cayman Island Dollar",
+    "startingHomePrice": 150000
+  },
+
+  {
+    "islandName": "Bocas del Toro, Panama",
+    "population": 7366,
+    "language": "Spanish",
+    "currency": "United States Dollar",
+    "startingHomePrice": 80000
+  },
+  {
+    "islandName":"Ambergris Caye, Belize",
+    "population": 13381,
+    "language": "English",
+    "currency": "Belize Dollar",
+    "startingHomePrice": 200000
+  },
+  {
+    "islandName": "Phuket, Thailand",
+    "population": 620000,
+    "language": "Thai and English",
+    "currency": "Baht",
+    "startingHomePrice": 168000
+  },
+  {
+    "islandName": "St Croix, USVI",
+    "population": 53000,
+    "language": "English",
+    "currency": "United States Dollar",
+    "startingHomePrice":130000
+  },
+
+  {
+    "islandName":"Cozumel",
+    "population": 100000,
+    "language": "Spanish",
+    "currency": "Peso",
+    "startingHomePrice": 104000
+  },
+  {
+    "islandName":"Oahu, Hawaii",
+    "population": 953207,
+    "language": "English",
+    "currency": "United States Dollar",
+    "startingHomePrice": 60000
+  },
+  {
+    "islandName": "Key Largo, Florida",
+    "population": 11000,
+    "language": "English",
+    "currency": "United States Dollar",
+    "startingHomePrice": 250000
+  },
+  {
+    "islandName": "Maui, Hawaii",
+    "population": 160000,
+    "language": "English",
+    "currency": "United States Dollar",
+    "startingHomePrice": 450000
+  }
+]
